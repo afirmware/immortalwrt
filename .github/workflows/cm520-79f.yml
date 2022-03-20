@@ -10,7 +10,7 @@ name: cm520-79f
 on:
   push:
     branches: 
-      - master
+      - openwrt-21.02
   schedule:
     - cron: 0 20 * * *
   release:
