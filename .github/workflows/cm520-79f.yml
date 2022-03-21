@@ -72,6 +72,7 @@ jobs:
           # 
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
+          cat ./.config
       - name: Make download
         run: |
           make download -j8
