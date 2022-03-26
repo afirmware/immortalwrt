@@ -134,5 +134,3 @@ jobs:
         with:
           # The files or file patterns to upload. You can upload multiple files by split them by semicolon. You can use the glob pattern to find the files.
           file: ./artifact/firmware/*
-          # With tags: true, your Releases deployment will trigger if and only if the build is a tagged build.
-          tags: ${{ github.ref }}
