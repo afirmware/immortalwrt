@@ -11,7 +11,7 @@ name: Merge-upstream
 on:
   push:
     branches:
-      - master
+      - openwrt-21.02
   schedule:
     - cron: 30 19 * * *
 
