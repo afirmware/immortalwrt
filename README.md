@@ -1,5 +1,11 @@
 <img src="https://avatars.githubusercontent.com/u/53193414?s=200&v=4" alt="logo" width="200" height="200" align="right">
 
+# 自动编译星际宝盒路由器MobiPromo CM520-79F的固件
+
+星际宝盒路由器MobiPromo CM520-79F的固件自动编译脚本，基于ImmortalWrt（基于OpenWrt）  
+加了passwall和openclash插件
+首先需要给星际宝盒刷入OpBoot，然后刷入immortalwrt-ipq40xx-generic-mobipromo_cm520-79f-squashfs-nand-sysupgrade.bin  
+
 # Project ImmortalWrt
 
 ImmortalWrt is a fork of [OpenWrt](https://openwrt.org), with more packages ported, more devices supported, better performance, and special optimizations for mainland China users.<br/>
