@@ -54,13 +54,13 @@ jobs:
           sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-      - name: SSH to GitHub Actions
-        # You may pin to the exact commit or the version.
-        # uses: P3TERX/ssh2actions@71006b93bff498b020448ac10964f8a5d0f9f32c
-        uses: P3TERX/ssh2actions@v1.0.0
-        with:
-          # choose tmate or ngrok mode
-          mode: tmate # optional, default is tmate
+      # - name: SSH to GitHub Actions
+      #  # You may pin to the exact commit or the version.
+      #  # uses: P3TERX/ssh2actions@71006b93bff498b020448ac10964f8a5d0f9f32c
+      #  uses: P3TERX/ssh2actions@v1.0.0
+      #  with:
+      #    # choose tmate or ngrok mode
+      #    mode: tmate # optional, default is tmate
       
       - name: Generate configuration file
         run: |
@@ -76,16 +76,8 @@ jobs:
           CONFIG_TARGET_BOARD="ipq40xx"
           CONFIG_TARGET_SUBTARGET="generic"
           CONFIG_TARGET_PROFILE="DEVICE_mobipromo_cm520-79f"
-          CONFIG_PACKAGE_luci-app-openclash=y
           CONFIG_PACKAGE_luci-app-passwall=y
           CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y
-          CONFIG_PACKAGE_luci-app-ddns=y
-          CONFIG_PACKAGE_luci-app-frpc=y
-          CONFIG_PACKAGE_luci-app-frps=y
-          CONFIG_PACKAGE_luci-app-upnp=y
-          CONFIG_PACKAGE_luci-app-vlmcsd=y
-          CONFIG_PACKAGE_luci-app-wol=y
-          CONFIG_PACKAGE_luci-app-zerotier=y
           EOF
           #
           # ===============================================================
